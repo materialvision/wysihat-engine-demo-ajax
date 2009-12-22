@@ -36,6 +36,13 @@ class PagesController < ApplicationController
   def edit
     @page = Page.find(params[:id])
   end
+  
+  def ajax_edit_content
+    @page = Page.find(params[:id])
+    respond_to do |format|
+       format.html { render :partial => 'edit_pagecontent', :object => @page }# edit_pageontent.html.erb
+    end
+  end
 
   # POST /pages
   # POST /pages.xml

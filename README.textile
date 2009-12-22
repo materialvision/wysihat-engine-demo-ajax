@@ -1,3 +1,7 @@
+This is a special version of the Wysihat Engine demo to show the problem of Ajax loading a wysihat form.... 
+
+
+
 h1. WysiHat Engine Demo
 
 A simple demo for "WysiHat Engine":http://github.com/80beans/wysihat-engine/.
