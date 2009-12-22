@@ -1,0 +1,15 @@
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_area :name, :col=>10, :row=>10 %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.wysihat_editor :content %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
